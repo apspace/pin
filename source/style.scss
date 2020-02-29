@@ -15,6 +15,11 @@ body{
 }
 
 .top_menu {
+	position: fixed;
+	z-index: 99999;
+	width: 100%;
+	background-color: white;
+	border-bottom: 1px solid $gray;
 	height: 65px;
 	padding: 4px 8px;
 	display: flex;
@@ -114,13 +119,11 @@ body{
 	}
 	flex-grow: 1;
 	height: 40px;
-	// background: $gray;
 }
 .your_pins_dropdown{
 	flex: 0 0 auto;
 	color: $black;
 	font-weight: 500;
-	// background-color: $gray;
 	padding: 0 12px;
 	height: 40px;
 	display: flex;
@@ -137,7 +140,6 @@ body{
 	&:before{
 		content: " ";
 		height: 40px;
-		// width: 100px;
 		overflow: visible;
 		opacity: 0.2;
 		border-left: 1px solid;
@@ -146,7 +148,8 @@ body{
 }
 
 .cover {
-	height: 300px;
+	padding-top: 60px;
+	height: 360px;
 	background-image: url("#");
 	background-size: cover;
 	background-attachment: local;
@@ -256,14 +259,9 @@ body{
 .board__item {
 	transition: all 200ms ease;
 	margin: 8px 8px;
-	// max-width: 316px;
 	padding: 8px 8px;
 	border-radius: 8px;
-	// background-color: red;
 	overflow: hidden;
-	// &:last-child{
-	// 	margin: auto;
-	// 	background-color: red;
 	background-size: 90% 90%;
 
 
@@ -294,7 +292,6 @@ body{
 		}
 		.board__name{
 			flex: 0 1 90%;
-			// background-color: #fff;
 		}
 	}
 }
@@ -344,7 +341,6 @@ body{
 	padding: 16px 8px 12px 8px;
 	flex-wrap: wrap;
 	position: relative;
-	// background-color:green;
 }
 .board__name {
 	font-weight: 700;
@@ -373,5 +369,4 @@ body{
 	align-self: flex-end;
 	display: none;
 	opacity: .6;
-	// background-color: #fff;
 }
