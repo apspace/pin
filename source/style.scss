@@ -1,0 +1,367 @@
+//сбрасываем стандартные установки стилей
+@import "_reset";
+@import "_animation";
+
+$black:#111;
+$red: #e60023;
+$gray:  rgba(0, 0, 0, .08);
+$dark_gray:#8e8e8e;
+
+body{
+	color: $black;
+	font-size: 16px;
+	-webkit-font-smoothing: antialiased;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+.top_menu {
+	height: 65px;
+	padding: 4px 8px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	color: $dark_gray;
+.top_menu_item{
+	letter-spacing: 0px;
+	align-items: center;
+	display: flex;
+	font-weight: 700;
+	text-align: center;
+	padding: 0 1rem;
+	background: white;
+	
+	&:hover{
+		background: $gray;	
+		}
+	a{
+		color: $dark_gray;
+	}
+	}
+}
+.button {
+	height: 40px;
+	border-radius: 100px;
+	&:hover{
+		background: gray;
+		transition: all 200ms ease;
+	}
+}
+.icon-button{
+	height: 48px;
+	border-radius: 100px;
+	width: 48px;
+	display: flex;
+	justify-content: center;
+	transition: all 200ms ease;
+
+}
+.pinterest_logo{
+	margin-left: 4px;
+	border-radius: 100px;
+	height: 48px;
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	.pin {
+		fill: $red;
+	}
+}
+.username {
+	color: $black;
+	padding: 0 .7rem !important;
+}
+.user_avatar {
+	height: 24px;
+	background: $dark_gray;
+	margin-right: .7rem;
+	img{
+		height: 100%;
+		width: auto;
+		border-radius: 999px;
+	}
+}
+.fa-plus-circle{
+	color:$red;
+}
+.search{
+	margin: 0 1rem;
+	display: flex;
+	.search_text{
+		position: relative;
+		.search_icon{
+			position: absolute;
+			left: 12px;
+			top: 10px;
+			color: $dark_gray;
+		}
+		input{
+			width: 100%;
+			font-size: 16px;
+			font-weight: 700;
+			padding: 11px 11px 11px 48px;	
+			background-color: $gray;
+			border-radius: 8px 0px 0px 8px;
+		}
+		flex-grow: 1;
+		text-align: left;
+	}
+	flex-grow: 1;
+	height: 40px;
+	// background: $gray;
+}
+.your_pins_dropdown{
+	color: $black;
+	font-weight: 500;
+	background-color: $gray;
+	padding: 0 12px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+
+	border-radius: 0 8px 8px 0;
+	span{
+		font-size: 14px;
+		font-weight: 700;
+		margin-right: 4px;
+	}
+	&:before{
+		content: " ";
+		height: 40px;
+		// width: 100px;
+		// background-color: red;
+		overflow: visible;
+		opacity: 0.2;
+		border-left: 1px solid;
+		padding-left: 1em;
+	}
+}
+
+.cover {
+	height: 300px;
+	background-image: url("#");
+	background-size: cover;
+	background-attachment: local;
+	background-color: $gray;
+}
+.user_profile_wrapper{
+	max-width: 800px;
+	margin: auto;
+}
+.user_profile {
+	display: flex;
+	align-items: center;
+}
+.user_photo {
+	width: 25%;
+	margin-top: -50px;
+	padding: 0 0 0 12px;
+	img{
+		margin-left: -12px;
+		border-radius: 50%;
+		width: 100%;
+		// height: auto;
+		box-shadow: 0 0 0 5px #fff;
+
+	}
+}
+.user_heading {
+	// padding-top: 20px;
+	// align-self: flex-start;
+	padding: 24px 0 0 8px;
+	margin-top: -60px;
+}
+.user_name {
+	font-size: 24px;
+	font-weight: 700;
+}
+.user_views {
+	font-size: 18px;
+	margin-top:12px;
+}
+.view_number {
+	font-weight: 700;
+}
+.user_website {
+	margin-top: 24px;
+	font-size: 18px;
+	font-weight: 700;
+	a{
+		color: $black;
+	}
+}
+.filter {
+	padding-top: 24px;
+	max-width: 800px;
+	margin: auto;
+}
+.filter__content {
+	height: 65px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.filter__button {
+	color: $dark_gray;
+	display: flex;
+	align-items: center;
+	padding: 12px 16px;
+	font-weight: 700;
+
+	&:hover{
+		text-decoration: underline;
+		color: $black;
+		
+
+	}
+}
+.filter__button-selected {
+	color: $black;
+	border-radius: 100px;
+	padding: 12px 16px;
+	background-color: $gray;
+}
+.board-num{
+	font-size: 14px;
+	max-width: 800px;
+	margin: auto;
+	color: $dark_gray;
+	text-align: center;
+}
+
+.board {
+	padding-bottom: 100px;
+	margin-top: 50px;
+	display: flex;
+	align-content: center;
+
+}
+.board__content {
+	// display: grid;
+	// grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: auto;
+}
+
+.board__item {
+	transition: all 200ms ease;
+	margin: 8px 8px;
+	// max-width: 316px;
+	padding: 8px 8px;
+	border-radius: 8px;
+	// background-color: red;
+	overflow: hidden;
+	// &:last-child{
+	// 	margin: auto;
+	// 	background-color: red;
+	background-size: 90% 90%;
+
+
+	
+	&:first-child{
+		color:$dark_gray;
+		.board__name{
+			font-size: 18px;
+		}
+		.board__cover{
+			background-color: $gray;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+		}
+	}
+	&:hover{
+		background-color: $gray;
+		transform: scale(1.01);
+		.board__edit {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			&:hover{
+				background-color: rgba(0, 0, 0, .1);
+			}
+		}
+		.board__name{
+			flex: 0 1 90%;
+			// background-color: #fff;
+		}
+	}
+}
+.board__cover {
+	border-radius: 8px;
+	height: 200px;
+	width: 300px;
+	position: relative;
+	overflow: hidden;
+	
+	img{
+		display: block;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+}
+.board__cover-img-01 {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 200px;
+	width: 200px;
+	background: blue;
+	height: 200px;
+	width: 200px;
+}
+.board__cover-img-02 {
+	position: absolute;
+	left: 201px;
+	top: 0;
+	height: 99.5px;
+	width: 99px;
+	background-color: $gray;
+}
+.board__cover-img-03 {
+	position: absolute;
+	left: 201px;
+	top: 100.5px;
+	height: 99.5px;
+	width: 99px;
+	background-color: $gray;
+}
+.board__heading {
+	display: flex;
+	padding: 16px 8px 12px 8px;
+	flex-wrap: wrap;
+	position: relative;
+	// background-color:green;
+}
+.board__name {
+	font-weight: 700;
+	font-size: 21px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	flex: 1 0 100%;
+
+}
+.board__pins {
+	flex: 1 0 100%;
+	padding: 4px 0;
+	white-space: nowrap;
+	font-size: 14px;
+}
+.board__edit {
+	font-size: 1rem;
+	color:$dark_gray;
+	height: 40px;
+	border-radius: 100px;
+	width: 40px;
+	position: absolute;
+	right: 0;
+	bottom: 0px;
+	align-self: flex-end;
+	display: none;
+	opacity: .6;
+	// background-color: #fff;
+}
