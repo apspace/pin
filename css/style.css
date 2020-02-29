@@ -246,7 +246,7 @@ body {
 .search .search_text .search_icon {
   position: absolute;
   left: 12px;
-  top: 8px;
+  top: 9px;
   color: #8e8e8e;
 }
 
@@ -254,7 +254,7 @@ body {
   width: 100%;
   font-size: 16px;
   font-weight: 700;
-  padding: 10px 8px 11px 48px;
+  padding: 10px 8px 11px 44px;
   background-color: transparent;
   border-radius: 8px 0px 0px 8px;
 }
